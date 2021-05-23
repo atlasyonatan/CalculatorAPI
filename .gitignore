@@ -4,3 +4,5 @@ csharp-client-generated.zip
 aspnetcore-server-generated.zip
 
 aspnetcore-server-generated/.vs/IO.Swagger/v16/
+
+aspnetcore-server-generated/.vs/IO.Swagger/DesignTimeBuild/.dtbcache.v2

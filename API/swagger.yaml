@@ -51,8 +51,15 @@ paths:
               example: 1.0
         "400":
           description: Invalid request
+        "401":
+          description: Access token is missing or invalid
+      security:
+      - auth1: []
 components:
   schemas: {}
+  responses:
+    UnauthorizedError:
+      description: Access token is missing or invalid
   securitySchemes:
     auth1:
       type: http

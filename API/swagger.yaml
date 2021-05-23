@@ -24,6 +24,15 @@ paths:
           addition:
             summary: Add the two numbers
             value: add
+          subtraction:
+            summary: Subtract the two numbers
+            value: sub
+          Multiplication:
+            summary: Multiply the two numbers
+            value: mul
+          Division:
+            summary: Divide the first number by the second number
+            value: div
       requestBody:
         content:
           application/json:

@@ -1,0 +1,51 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+servers:
+- url: https://virtserver.swaggerhub.com/atlasyonatan/CalculatorAPI/1.0.0
+  description: SwaggerHub API Auto Mocking
+security:
+- auth1: []
+paths:
+  /calculate:
+    post:
+      description: Calculates the requested mathematical operation with the two given
+        numbers
+      parameters:
+      - name: op
+        in: query
+        description: Name of mathematical operation
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+        examples:
+          addition:
+            summary: Add the two numbers
+            value: add
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                type: number
+        required: true
+      responses:
+        "200":
+          description: Successful calculation
+          content:
+            text/plain:
+              schema:
+                type: number
+              example: 1.0
+        "400":
+          description: Invalid request
+components:
+  schemas: {}
+  securitySchemes:
+    auth1:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

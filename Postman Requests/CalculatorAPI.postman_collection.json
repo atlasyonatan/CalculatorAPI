@@ -1,0 +1,377 @@
+{
+	"info": {
+		"_postman_id": "664fef53-e60c-4963-a272-17e4228b0130",
+		"name": "CalculatorAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "divide by infinity",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "d0n87s07SABD7d7hns8asgb8d7AS7duHiufhoshdba",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[1,Infinity]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:50352/CalculatorAPI/1.0.0/calculate?op=div",
+					"host": [
+						"localhost"
+					],
+					"port": "50352",
+					"path": [
+						"CalculatorAPI",
+						"1.0.0",
+						"calculate"
+					],
+					"query": [
+						{
+							"key": "op",
+							"value": "div"
+						}
+					]
+				},
+				"description": "authorised request with token.\r\nattempts to divide 1 by infinity.\r\nexpected result is 0.0"
+			},
+			"response": []
+		},
+		{
+			"name": "divide by 0",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "d0n87s07SABD7d7hns8asgb8d7AS7duHiufhoshdba",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[1,Infinity]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:50352/CalculatorAPI/1.0.0/calculate?op=div",
+					"host": [
+						"localhost"
+					],
+					"port": "50352",
+					"path": [
+						"CalculatorAPI",
+						"1.0.0",
+						"calculate"
+					],
+					"query": [
+						{
+							"key": "op",
+							"value": "div"
+						}
+					]
+				},
+				"description": "authorised request with token.\r\nattempts to divide 1 by 0.\r\nexpected result is \"Infinity\""
+			},
+			"response": []
+		},
+		{
+			"name": "divide numbers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "d0n87s07SABD7d7hns8asgb8d7AS7duHiufhoshdba",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[1,Infinity]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:50352/CalculatorAPI/1.0.0/calculate?op=div",
+					"host": [
+						"localhost"
+					],
+					"port": "50352",
+					"path": [
+						"CalculatorAPI",
+						"1.0.0",
+						"calculate"
+					],
+					"query": [
+						{
+							"key": "op",
+							"value": "div"
+						}
+					]
+				},
+				"description": "authorised request with token.\r\nattempts to divide 1545 by 8776.\r\nexpected result is 0.17604831358249773"
+			},
+			"response": []
+		},
+		{
+			"name": "add numbers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "d0n87s07SABD7d7hns8asgb8d7AS7duHiufhoshdba",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[1545,8776]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:50352/CalculatorAPI/1.0.0/calculate?op=div",
+					"host": [
+						"localhost"
+					],
+					"port": "50352",
+					"path": [
+						"CalculatorAPI",
+						"1.0.0",
+						"calculate"
+					],
+					"query": [
+						{
+							"key": "op",
+							"value": "div"
+						}
+					]
+				},
+				"description": "authorised request with token.\r\nattempts to add 1545 and 8776.\r\nexpected result is 10321.0"
+			},
+			"response": []
+		},
+		{
+			"name": "add 1 number",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "d0n87s07SABD7d7hns8asgb8d7AS7duHiufhoshdba",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[1545,8776]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:50352/CalculatorAPI/1.0.0/calculate?op=div",
+					"host": [
+						"localhost"
+					],
+					"port": "50352",
+					"path": [
+						"CalculatorAPI",
+						"1.0.0",
+						"calculate"
+					],
+					"query": [
+						{
+							"key": "op",
+							"value": "div"
+						}
+					]
+				},
+				"description": "authorised request with token.\r\nattempts to add 1 and... nothing else?\r\nexpected behaviour:\r\n400 Bad request\r\n\"Request body must contain at least 2 numbers\""
+			},
+			"response": []
+		},
+		{
+			"name": "sub numbers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "d0n87s07SABD7d7hns8asgb8d7AS7duHiufhoshdba",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[1545,8776]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:50352/CalculatorAPI/1.0.0/calculate?op=div",
+					"host": [
+						"localhost"
+					],
+					"port": "50352",
+					"path": [
+						"CalculatorAPI",
+						"1.0.0",
+						"calculate"
+					],
+					"query": [
+						{
+							"key": "op",
+							"value": "div"
+						}
+					]
+				},
+				"description": "authorised request with token.\r\nattempts to subtract 1545 and 8776.\r\nexpected result is -7231.0"
+			},
+			"response": []
+		},
+		{
+			"name": "multiply numbers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "d0n87s07SABD7d7hns8asgb8d7AS7duHiufhoshdba",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[1545,8776]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:50352/CalculatorAPI/1.0.0/calculate?op=div",
+					"host": [
+						"localhost"
+					],
+					"port": "50352",
+					"path": [
+						"CalculatorAPI",
+						"1.0.0",
+						"calculate"
+					],
+					"query": [
+						{
+							"key": "op",
+							"value": "div"
+						}
+					]
+				},
+				"description": "authorised request with token.\r\nattempts to multiply 1545 and 8776.\r\nexpected result is 13558920.0"
+			},
+			"response": []
+		},
+		{
+			"name": "bad token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "d0n87s07SABD7d7hns8asgb8d7AS7duHiufhoshdba",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[1545,8776]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:50352/CalculatorAPI/1.0.0/calculate?op=div",
+					"host": [
+						"localhost"
+					],
+					"port": "50352",
+					"path": [
+						"CalculatorAPI",
+						"1.0.0",
+						"calculate"
+					],
+					"query": [
+						{
+							"key": "op",
+							"value": "div"
+						}
+					]
+				},
+				"description": "valid request with unauthorised token.\r\nattempts to multiply 1545 and 8776.\r\nexpected behaviour:\r\n401 unauthorised"
+			},
+			"response": []
+		}
+	]
+}
